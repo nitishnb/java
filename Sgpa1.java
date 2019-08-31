@@ -1,5 +1,16 @@
 import java.util.*;
 import java.io.*;
+public class Sgpa1
+{
+ public static void main(String args[])
+ {
+
+  Student s1=new Student();
+  s1.input();
+  s1.display();
+}
+}
+
 class Student 
 { 
     public String s_usn; 
@@ -25,7 +36,7 @@ class Student
     for(int k=0;k<5;k++)
      {
        n[k]=(arr_marks[k]/10);
-       if(n[k]!=10 || n[k]!=9 ||n[k]!=10 ||n[k]!=8 ||n[k]!=7 ||n[k]!=6 ||n[k]!=5 ||n[k]!=4 )
+       if(n[k]!=10 || n[k]!=9 ||n[k]!=8 ||n[k]!=7 ||n[k]!=6 ||n[k]!=5 ||n[k]!=4 )
        {
        n[k]=n[k]+1;
        }
@@ -43,14 +54,3 @@ class Student
     System.out.println("Sgpa   :"+sgpa);
 }
 } 
-
-public class Main
-{
- public static void main(String[] args)
- {
-
-  Student s1=new Student();
-  s1.input();
-  s1.display();
-}
-}
